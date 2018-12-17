@@ -3,3 +3,11 @@ node_modules/
 
 # production files
 build/
+bin/
+
+# gradle files
+.gradle/
+
+.settings/
+.classpath
+.project

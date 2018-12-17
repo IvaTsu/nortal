@@ -1,29 +1,93 @@
-2018-12-03 14:41:58.855  INFO 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Starting CakeClubApp on ml772 with PID 12432 (C:\Arendus\winterUniWorkspace\cake-club\build\classes\java\main started by karlpe in C:\Arendus\winterUniWorkspace\cake-club)
-2018-12-03 14:41:58.861 DEBUG 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-12-03 14:41:58.863  INFO 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : The following profiles are active: dev,swagger
-2018-12-03 14:42:02.208 DEBUG 12432 --- [restartedMain] c.n.cake_club.config.AsyncConfiguration  : Creating Async Task Executor
-2018-12-03 14:42:02.801 DEBUG 12432 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Registering JVM gauges
-2018-12-03 14:42:02.864 DEBUG 12432 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Monitoring the datasource
-2018-12-03 14:42:02.865 DEBUG 12432 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Initializing Metrics JMX reporting
-2018-12-03 14:42:04.127 DEBUG 12432 --- [restartedMain] c.n.c.config.LiquibaseConfiguration      : Configuring Liquibase
-2018-12-03 14:42:04.369  WARN 12432 --- [cake-club-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Starting Liquibase asynchronously, your database might not be ready at startup!
-2018-12-03 14:42:05.992 DEBUG 12432 --- [cake-club-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Liquibase has updated your database in 1620 ms
-2018-12-03 14:42:07.972 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering CORS filter
-2018-12-03 14:42:08.071  INFO 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Web application configuration, using profiles: dev
-2018-12-03 14:42:08.071 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Initializing Metrics registries
-2018-12-03 14:42:08.077 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering Metrics Filter
-2018-12-03 14:42:08.077 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering Metrics Servlet
-2018-12-03 14:42:08.081 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Initialize H2 console
-2018-12-03 14:42:08.083  INFO 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Web application fully configured
-2018-12-03 14:42:08.317 DEBUG 12432 --- [restartedMain] c.n.c.security.jwt.TokenProvider         : Using a Base64-encoded JWT secret key
-2018-12-03 14:42:10.753 DEBUG 12432 --- [restartedMain] c.n.c.config.DatabaseConfiguration       : Starting H2 database
-2018-12-03 14:42:11.511 DEBUG 12432 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Starting Swagger
-2018-12-03 14:42:11.527 DEBUG 12432 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Started Swagger in 16 ms
-2018-12-03 14:42:12.914  INFO 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Started CakeClubApp in 15.303 seconds (JVM running for 18.702)
-2018-12-03 14:42:12.970  INFO 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : 
+2018-12-17 03:17:44.149  INFO 13680 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Starting CakeClubApp on Ivans-MacBook-Pro.local with PID 13680 (/Users/ivts/Projects/Test_Tasks/nortal/build/classes/java/main started by ivts in /Users/ivts/Projects/Test_Tasks/nortal)
+2018-12-17 03:17:44.158 DEBUG 13680 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-12-17 03:17:44.163  INFO 13680 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : The following profiles are active: dev,swagger
+2018-12-17 03:17:48.021 DEBUG 13680 --- [restartedMain] c.n.cake_club.config.AsyncConfiguration  : Creating Async Task Executor
+2018-12-17 03:17:48.820 DEBUG 13680 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Registering JVM gauges
+2018-12-17 03:17:48.907 DEBUG 13680 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Monitoring the datasource
+2018-12-17 03:17:48.908 DEBUG 13680 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Initializing Metrics JMX reporting
+2018-12-17 03:17:50.622 DEBUG 13680 --- [restartedMain] c.n.c.config.LiquibaseConfiguration      : Configuring Liquibase
+2018-12-17 03:17:50.954  WARN 13680 --- [cake-club-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Starting Liquibase asynchronously, your database might not be ready at startup!
+2018-12-17 03:17:53.538 DEBUG 13680 --- [cake-club-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Liquibase has updated your database in 2583 ms
+2018-12-17 03:17:55.297 DEBUG 13680 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering CORS filter
+2018-12-17 03:17:55.427  INFO 13680 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Web application configuration, using profiles: dev
+2018-12-17 03:17:55.428 DEBUG 13680 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Initializing Metrics registries
+2018-12-17 03:17:55.432 DEBUG 13680 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering Metrics Filter
+2018-12-17 03:17:55.433 DEBUG 13680 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering Metrics Servlet
+2018-12-17 03:17:55.438 DEBUG 13680 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Initialize H2 console
+2018-12-17 03:17:55.441  INFO 13680 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Web application fully configured
+2018-12-17 03:17:55.786 DEBUG 13680 --- [restartedMain] c.n.c.security.jwt.TokenProvider         : Using a Base64-encoded JWT secret key
+2018-12-17 03:17:59.077 DEBUG 13680 --- [restartedMain] c.n.c.config.DatabaseConfiguration       : Starting H2 database
+2018-12-17 03:18:00.835 DEBUG 13680 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Starting Swagger
+2018-12-17 03:18:00.867 DEBUG 13680 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Started Swagger in 32 ms
+2018-12-17 03:18:02.951  INFO 13680 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Started CakeClubApp in 20.354 seconds (JVM running for 21.064)
+2018-12-17 03:18:02.972  INFO 13680 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : 
 ----------------------------------------------------------
 	Application 'cakeClub' is running! Access URLs:
 	Local: 		http://localhost:8080/
-	External: 	http://192.168.56.1:8080/
+	External: 	http://10.0.13.181:8080/
 	Profile(s): 	[dev, swagger]
 ----------------------------------------------------------
+2018-12-17 03:28:09.592  INFO 15069 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Starting CakeClubApp on Ivans-MacBook-Pro.local with PID 15069 (/Users/ivts/Projects/Test_Tasks/nortal/build/classes/java/main started by ivts in /Users/ivts/Projects/Test_Tasks/nortal)
+2018-12-17 03:28:09.594 DEBUG 15069 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-12-17 03:28:09.595  INFO 15069 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : The following profiles are active: dev,swagger
+2018-12-17 03:28:13.868 DEBUG 15069 --- [restartedMain] c.n.cake_club.config.AsyncConfiguration  : Creating Async Task Executor
+2018-12-17 03:28:14.813 DEBUG 15069 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Registering JVM gauges
+2018-12-17 03:28:14.890 DEBUG 15069 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Monitoring the datasource
+2018-12-17 03:28:14.896 DEBUG 15069 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Initializing Metrics JMX reporting
+2018-12-17 03:28:16.785 DEBUG 15069 --- [restartedMain] c.n.c.config.LiquibaseConfiguration      : Configuring Liquibase
+2018-12-17 03:28:17.237  WARN 15069 --- [cake-club-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Starting Liquibase asynchronously, your database might not be ready at startup!
+2018-12-17 03:28:19.430 DEBUG 15069 --- [cake-club-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Liquibase has updated your database in 2192 ms
+2018-12-17 03:28:21.431 DEBUG 15069 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering CORS filter
+2018-12-17 03:28:21.575  INFO 15069 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Web application configuration, using profiles: dev
+2018-12-17 03:28:21.576 DEBUG 15069 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Initializing Metrics registries
+2018-12-17 03:28:21.590 DEBUG 15069 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering Metrics Filter
+2018-12-17 03:28:21.590 DEBUG 15069 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering Metrics Servlet
+2018-12-17 03:28:21.593 DEBUG 15069 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Initialize H2 console
+2018-12-17 03:28:21.596  INFO 15069 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Web application fully configured
+2018-12-17 03:28:21.993 DEBUG 15069 --- [restartedMain] c.n.c.security.jwt.TokenProvider         : Using a Base64-encoded JWT secret key
+2018-12-17 03:28:25.870 DEBUG 15069 --- [restartedMain] c.n.c.config.DatabaseConfiguration       : Starting H2 database
+2018-12-17 03:28:27.017 DEBUG 15069 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Starting Swagger
+2018-12-17 03:28:27.040 DEBUG 15069 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Started Swagger in 23 ms
+2018-12-17 03:28:28.825  INFO 15069 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Started CakeClubApp in 20.791 seconds (JVM running for 21.495)
+2018-12-17 03:28:28.845  INFO 15069 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : 
+----------------------------------------------------------
+	Application 'cakeClub' is running! Access URLs:
+	Local: 		http://localhost:8080/
+	External: 	http://10.0.13.181:8080/
+	Profile(s): 	[dev, swagger]
+----------------------------------------------------------
+2018-12-17 03:29:31.718 DEBUG 15069 --- [XNIO-2 task-2] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.repository.CustomAuditEventRepository.add() with argument[s] = [AuditEvent [timestamp=2018-12-17T01:29:31.662Z, principal=anonymousUser, type=AUTHORIZATION_FAILURE, data={details=org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null, type=org.springframework.security.access.AccessDeniedException, message=Access is denied}]]
+2018-12-17 03:29:31.754 DEBUG 15069 --- [XNIO-2 task-2] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.repository.CustomAuditEventRepository.add() with result = null
+2018-12-17 03:29:31.756 DEBUG 15069 --- [XNIO-2 task-3] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.web.rest.EventResource.getAllEvents() with argument[s] = [false]
+2018-12-17 03:29:31.804 DEBUG 15069 --- [XNIO-2 task-3] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.service.EventService.getAllEvents() with argument[s] = [null, false]
+2018-12-17 03:29:31.811  WARN 15069 --- [XNIO-2 task-2] o.z.problem.spring.common.AdviceTrait    : Unauthorized: Full authentication is required to access this resource
+2018-12-17 03:29:32.196 DEBUG 15069 --- [XNIO-2 task-3] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.service.EventService.getAllEvents() with result = [com.nortal.cake_club.service.dto.EventDTO@42a3d67f, com.nortal.cake_club.service.dto.EventDTO@5dd307d8, com.nortal.cake_club.service.dto.EventDTO@7459f850, com.nortal.cake_club.service.dto.EventDTO@76c2e106, com.nortal.cake_club.service.dto.EventDTO@2a0ec18f, com.nortal.cake_club.service.dto.EventDTO@6f26eed1, com.nortal.cake_club.service.dto.EventDTO@5406101d, com.nortal.cake_club.service.dto.EventDTO@352d014a, com.nortal.cake_club.service.dto.EventDTO@6973acd9, com.nortal.cake_club.service.dto.EventDTO@31fb8740, com.nortal.cake_club.service.dto.EventDTO@5519ff9a, com.nortal.cake_club.service.dto.EventDTO@8e38322, com.nortal.cake_club.service.dto.EventDTO@7c82e383]
+2018-12-17 03:29:32.197 DEBUG 15069 --- [XNIO-2 task-3] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.web.rest.EventResource.getAllEvents() with result = <200 OK,[com.nortal.cake_club.service.dto.EventDTO@42a3d67f, com.nortal.cake_club.service.dto.EventDTO@5dd307d8, com.nortal.cake_club.service.dto.EventDTO@7459f850, com.nortal.cake_club.service.dto.EventDTO@76c2e106, com.nortal.cake_club.service.dto.EventDTO@2a0ec18f, com.nortal.cake_club.service.dto.EventDTO@6f26eed1, com.nortal.cake_club.service.dto.EventDTO@5406101d, com.nortal.cake_club.service.dto.EventDTO@352d014a, com.nortal.cake_club.service.dto.EventDTO@6973acd9, com.nortal.cake_club.service.dto.EventDTO@31fb8740, com.nortal.cake_club.service.dto.EventDTO@5519ff9a, com.nortal.cake_club.service.dto.EventDTO@8e38322, com.nortal.cake_club.service.dto.EventDTO@7c82e383],{}>
+2018-12-17 03:29:32.286  WARN 15069 --- [XNIO-2 task-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by handler execution: org.springframework.security.authentication.InsufficientAuthenticationException: Full authentication is required to access this resource
+2018-12-17 03:31:35.043 DEBUG 15069 --- [XNIO-2 task-7] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.web.rest.UserJWTController.authorize() with argument[s] = [LoginVM{username='user', rememberMe=null}]
+2018-12-17 03:31:35.203 DEBUG 15069 --- [XNIO-2 task-7] c.n.c.security.DomainUserDetailsService  : Authenticating user
+2018-12-17 03:31:35.608 DEBUG 15069 --- [XNIO-2 task-7] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.repository.CustomAuditEventRepository.add() with argument[s] = [AuditEvent [timestamp=2018-12-17T01:31:35.607Z, principal=user, type=AUTHENTICATION_SUCCESS, data={}]]
+2018-12-17 03:31:35.645 DEBUG 15069 --- [XNIO-2 task-7] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.repository.CustomAuditEventRepository.add() with result = null
+2018-12-17 03:31:36.057 DEBUG 15069 --- [XNIO-2 task-7] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.web.rest.UserJWTController.authorize() with result = <200 OK,com.nortal.cake_club.web.rest.UserJWTController$JWTToken@39d8d6ec,{Authorization=[Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTU0NTA5NjY5NX0.uUMGDseiCGu_Vd-ZTUbtuI13V2gLPhGavucdgUyTYbnvStN1wHb19VYGQEv5XDa36IdexCULTANw3UA085abxQ]}>
+2018-12-17 03:31:36.132 DEBUG 15069 --- [XNIO-2 task-8] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.web.rest.AccountResource.getAccount() with argument[s] = []
+2018-12-17 03:31:36.145 DEBUG 15069 --- [XNIO-2 task-8] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.service.UserService.getUserWithAuthorities() with argument[s] = []
+2018-12-17 03:31:36.176 DEBUG 15069 --- [XNIO-2 task-8] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.service.UserService.getUserWithAuthorities() with result = Optional[User{login='user', firstName='User', lastName='User', email='user@localhost', imageUrl='', activated='true', langKey='en', activationKey='null'}]
+2018-12-17 03:31:36.178 DEBUG 15069 --- [XNIO-2 task-8] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.web.rest.AccountResource.getAccount() with result = UserDTO{login='user', firstName='User', lastName='User', email='user@localhost', imageUrl='', activated=true, langKey='en', createdBy=system, createdDate=2018-11-30T09:31:05.668Z, lastModifiedBy='system', lastModifiedDate=null, authorities=[ROLE_USER]}
+2018-12-17 03:31:46.563 DEBUG 15069 --- [XNIO-2 task-9] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.web.rest.EventResource.getEvent() with argument[s] = [5]
+2018-12-17 03:31:46.563 DEBUG 15069 --- [XNIO-2 task-9] c.n.cake_club.web.rest.UserResource      : REST request to get Event : 5
+2018-12-17 03:31:46.564 DEBUG 15069 --- [XNIO-2 task-9] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.service.EventService.getEvent() with argument[s] = [5]
+2018-12-17 03:31:46.572 DEBUG 15069 --- [XNIO-2 task-9] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.service.EventService.getEvent() with result = Optional[com.nortal.cake_club.service.dto.EventDTO@793f5fd0]
+2018-12-17 03:31:46.574 DEBUG 15069 --- [XNIO-2 task-9] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.web.rest.EventResource.getEvent() with result = <200 OK,com.nortal.cake_club.service.dto.EventDTO@793f5fd0,{}>
+2018-12-17 03:31:52.476 DEBUG 15069 --- [XNIO-2 task-10] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.web.rest.UserSkillsResource.getAllUserSkills() with argument[s] = []
+2018-12-17 03:31:52.500 DEBUG 15069 --- [XNIO-2 task-10] c.n.c.web.rest.UserSkillsResource        : REST request to get all UserSkills
+2018-12-17 03:31:52.513 DEBUG 15069 --- [XNIO-2 task-10] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.web.rest.UserSkillsResource.getAllUserSkills() with result = []
+2018-12-17 03:31:59.719 DEBUG 15069 --- [XNIO-2 task-11] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.web.rest.EventResource.getAllEvents() with argument[s] = [false]
+2018-12-17 03:31:59.721 DEBUG 15069 --- [XNIO-2 task-11] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.service.EventService.getAllEvents() with argument[s] = [null, false]
+2018-12-17 03:31:59.744 DEBUG 15069 --- [XNIO-2 task-11] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.service.EventService.getAllEvents() with result = [com.nortal.cake_club.service.dto.EventDTO@74642869, com.nortal.cake_club.service.dto.EventDTO@39ed21e7, com.nortal.cake_club.service.dto.EventDTO@45dadf3a, com.nortal.cake_club.service.dto.EventDTO@41b98818, com.nortal.cake_club.service.dto.EventDTO@144bd726, com.nortal.cake_club.service.dto.EventDTO@44f92e51, com.nortal.cake_club.service.dto.EventDTO@57490afb, com.nortal.cake_club.service.dto.EventDTO@5abda142, com.nortal.cake_club.service.dto.EventDTO@1005afd4, com.nortal.cake_club.service.dto.EventDTO@1d039023, com.nortal.cake_club.service.dto.EventDTO@2825faa, com.nortal.cake_club.service.dto.EventDTO@35024909, com.nortal.cake_club.service.dto.EventDTO@8c42b72]
+2018-12-17 03:31:59.744 DEBUG 15069 --- [XNIO-2 task-11] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.web.rest.EventResource.getAllEvents() with result = <200 OK,[com.nortal.cake_club.service.dto.EventDTO@74642869, com.nortal.cake_club.service.dto.EventDTO@39ed21e7, com.nortal.cake_club.service.dto.EventDTO@45dadf3a, com.nortal.cake_club.service.dto.EventDTO@41b98818, com.nortal.cake_club.service.dto.EventDTO@144bd726, com.nortal.cake_club.service.dto.EventDTO@44f92e51, com.nortal.cake_club.service.dto.EventDTO@57490afb, com.nortal.cake_club.service.dto.EventDTO@5abda142, com.nortal.cake_club.service.dto.EventDTO@1005afd4, com.nortal.cake_club.service.dto.EventDTO@1d039023, com.nortal.cake_club.service.dto.EventDTO@2825faa, com.nortal.cake_club.service.dto.EventDTO@35024909, com.nortal.cake_club.service.dto.EventDTO@8c42b72],{}>
+2018-12-17 03:32:21.637 DEBUG 15069 --- [XNIO-2 task-12] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.web.rest.EventResource.getAllEvents() with argument[s] = [true]
+2018-12-17 03:32:21.638 DEBUG 15069 --- [XNIO-2 task-12] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.service.EventService.getAllEvents() with argument[s] = [null, true]
+2018-12-17 03:32:21.639 DEBUG 15069 --- [XNIO-2 task-12] c.n.cake_club.aop.logging.LoggingAspect  : Enter: com.nortal.cake_club.service.UserService.getUserWithAuthorities() with argument[s] = []
+2018-12-17 03:32:21.647 DEBUG 15069 --- [XNIO-2 task-12] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.service.UserService.getUserWithAuthorities() with result = Optional[User{login='user', firstName='User', lastName='User', email='user@localhost', imageUrl='', activated='true', langKey='en', activationKey='null'}]
+2018-12-17 03:32:21.650 DEBUG 15069 --- [XNIO-2 task-12] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.service.EventService.getAllEvents() with result = []
+2018-12-17 03:32:21.650 DEBUG 15069 --- [XNIO-2 task-12] c.n.cake_club.aop.logging.LoggingAspect  : Exit: com.nortal.cake_club.web.rest.EventResource.getAllEvents() with result = <200 OK,[],{}>
