@@ -1,0 +1,4 @@
+/* after changing this file run 'npm run webpack:build' */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* https://www.npmjs.com/package/angular-calendar */
+@import "~angular-calendar/css/angular-calendar.css";

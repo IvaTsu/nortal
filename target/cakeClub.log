@@ -1,0 +1,29 @@
+2018-12-03 14:41:58.855  INFO 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Starting CakeClubApp on ml772 with PID 12432 (C:\Arendus\winterUniWorkspace\cake-club\build\classes\java\main started by karlpe in C:\Arendus\winterUniWorkspace\cake-club)
+2018-12-03 14:41:58.861 DEBUG 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-12-03 14:41:58.863  INFO 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : The following profiles are active: dev,swagger
+2018-12-03 14:42:02.208 DEBUG 12432 --- [restartedMain] c.n.cake_club.config.AsyncConfiguration  : Creating Async Task Executor
+2018-12-03 14:42:02.801 DEBUG 12432 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Registering JVM gauges
+2018-12-03 14:42:02.864 DEBUG 12432 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Monitoring the datasource
+2018-12-03 14:42:02.865 DEBUG 12432 --- [restartedMain] c.n.c.config.MetricsConfiguration        : Initializing Metrics JMX reporting
+2018-12-03 14:42:04.127 DEBUG 12432 --- [restartedMain] c.n.c.config.LiquibaseConfiguration      : Configuring Liquibase
+2018-12-03 14:42:04.369  WARN 12432 --- [cake-club-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Starting Liquibase asynchronously, your database might not be ready at startup!
+2018-12-03 14:42:05.992 DEBUG 12432 --- [cake-club-Executor-1] i.g.j.c.liquibase.AsyncSpringLiquibase   : Liquibase has updated your database in 1620 ms
+2018-12-03 14:42:07.972 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering CORS filter
+2018-12-03 14:42:08.071  INFO 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Web application configuration, using profiles: dev
+2018-12-03 14:42:08.071 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Initializing Metrics registries
+2018-12-03 14:42:08.077 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering Metrics Filter
+2018-12-03 14:42:08.077 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Registering Metrics Servlet
+2018-12-03 14:42:08.081 DEBUG 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Initialize H2 console
+2018-12-03 14:42:08.083  INFO 12432 --- [restartedMain] c.nortal.cake_club.config.WebConfigurer  : Web application fully configured
+2018-12-03 14:42:08.317 DEBUG 12432 --- [restartedMain] c.n.c.security.jwt.TokenProvider         : Using a Base64-encoded JWT secret key
+2018-12-03 14:42:10.753 DEBUG 12432 --- [restartedMain] c.n.c.config.DatabaseConfiguration       : Starting H2 database
+2018-12-03 14:42:11.511 DEBUG 12432 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Starting Swagger
+2018-12-03 14:42:11.527 DEBUG 12432 --- [restartedMain] i.g.j.c.apidoc.SwaggerAutoConfiguration  : Started Swagger in 16 ms
+2018-12-03 14:42:12.914  INFO 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : Started CakeClubApp in 15.303 seconds (JVM running for 18.702)
+2018-12-03 14:42:12.970  INFO 12432 --- [restartedMain] com.nortal.cake_club.CakeClubApp         : 
+----------------------------------------------------------
+	Application 'cakeClub' is running! Access URLs:
+	Local: 		http://localhost:8080/
+	External: 	http://192.168.56.1:8080/
+	Profile(s): 	[dev, swagger]
+----------------------------------------------------------

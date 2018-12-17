@@ -1,0 +1,17 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="nortal" id="1539936252775-1">
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/events.csv"
+                  separator=";"
+                  tableName="jhi_calendar_event">
+            <column name="start_date" type="timestamp"/>
+            <column name="created_date" type="timestamp"/>
+        </loadData>
+        <loadData encoding="UTF-8"
+                  file="config/liquibase/user_event.csv"
+                  separator=";"
+                  tableName="jhi_user_event">
+        </loadData>
+    </changeSet>        
+</databaseChangeLog>

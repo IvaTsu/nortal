@@ -1,0 +1,43 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="userSkills">
+            <h2><span>User Skills</span> {{userSkills.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Strength</span></dt>
+                <dd>
+                    <span>{{userSkills.strength}}</span>
+                </dd>
+                <dt><span>Speed</span></dt>
+                <dd>
+                    <span>{{userSkills.speed}}</span>
+                </dd>
+                <dt><span>Stamina</span></dt>
+                <dd>
+                    <span>{{userSkills.stamina}}</span>
+                </dd>
+                <dt><span>Cooking</span></dt>
+                <dd>
+                    <span>{{userSkills.cooking}}</span>
+                </dd>
+                <dt><span>User</span></dt>
+                <dd>
+                    {{userSkills.user?.login}}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/user-skills', userSkills.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

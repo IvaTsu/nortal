@@ -1,0 +1,51 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-user-skills-heading">Create or edit a User Skills</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!userSkills.id">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="userSkills.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_strength">Strength</label>
+                    <input type="number" class="form-control" name="strength" id="field_strength"
+                        [(ngModel)]="userSkills.strength" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_speed">Speed</label>
+                    <input type="number" class="form-control" name="speed" id="field_speed"
+                        [(ngModel)]="userSkills.speed" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_stamina">Stamina</label>
+                    <input type="number" class="form-control" name="stamina" id="field_stamina"
+                        [(ngModel)]="userSkills.stamina" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_cooking">Cooking</label>
+                    <input type="number" class="form-control" name="cooking" id="field_cooking"
+                        [(ngModel)]="userSkills.cooking" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_user">User</label>
+                    <select class="form-control" id="field_user" name="user" [(ngModel)]="userSkills.user" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="userOption.id === userSkills.user?.id ? userSkills.user : userOption" *ngFor="let userOption of users; trackBy: trackUserById">{{userOption.login}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span>Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span>Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

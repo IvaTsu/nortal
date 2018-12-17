@@ -1,0 +1,25 @@
+<div class="modal-header">
+    <h4 class="modal-title">Create event for {{event.start | date : short}}</h4>
+    <button aria-label="Close" data-dismiss="modal" class="close" type="button" (click)="activeModal.dismiss('closed')"><span
+        aria-hidden="true">x</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form name="eventForm" (ngSubmit)="save()" #eventForm="ngForm">
+                <div class="form-group">
+                    <label class="username-label" for="eventTitle">Title</label>
+                    <input type="text" class="form-control" name="eventTitle" id="eventTitle" placeholder="Title"
+                           [(ngModel)]="event.title" required minlength="1" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="eventDescription">Description</label>
+                    <textarea class="form-control" name="eventDescription" id="eventDescription" placeholder="Description"
+                              [(ngModel)]="event.description" required minlength="1" maxlength="150"></textarea>
+                </div>
+                <button type="submit" [disabled]="eventForm.form.invalid" class="btn btn-primary">Create event</button>
+            </form>
+        </div>
+    </div>
+</div>

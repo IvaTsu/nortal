@@ -1,0 +1,12 @@
+<div>
+    <div class="row">
+        <div class="col-md-8">
+            <h2>{{event.title}}</h2>
+            <p>Description: {{event.description}}</p>
+            <p>Date: {{event.start | date : format : longDate}}</p>
+            <p>Participants: <span *ngFor="let user of event.users">{{user}} </span></p>
+        </div>
+    </div>
+</div>
+
+<!-- todo: add delete button -->

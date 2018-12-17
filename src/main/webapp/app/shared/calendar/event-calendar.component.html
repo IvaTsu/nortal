@@ -1,0 +1,16 @@
+<div class="table-wrap">
+    <jhi-calendar-header
+        [(viewDate)]="viewDate"
+        [(showAddEvent)]="showAddEvent"
+        (viewDateChange)="activeDayIsOpen = false">
+    </jhi-calendar-header>
+
+    <mwl-calendar-month-view class="event-calendar"
+        [viewDate]="viewDate"
+        [events]="calendarEvents"
+        [activeDayIsOpen]="activeDayIsOpen"
+        [refresh]="refresh"
+        (dayClicked)="dayClicked($event.day)"
+        (eventClicked)="handleEvent('Clicked', $event.event)">
+    </mwl-calendar-month-view>
+</div>
