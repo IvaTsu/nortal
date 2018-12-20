@@ -141,6 +141,57 @@
           </div>
         </div>
         <!-- todo: add skills (strength, speed, stamina, cooking) fields -->
+        <!-- Strength field -->
+        <div class="form-group">
+          <label class="form-control-label" for="strength">Strength:</label>
+          <input
+            class="form-control-range"
+            type="range"
+            id="strength"
+            name="strength"
+            min="0"
+            max="100"
+          />
+        </div>
+        <!-- Speed field -->
+        <div class="form-group">
+          <label class="form-control-label" for="speed">Speed:</label>
+          <input
+            class="form-control-range"
+            type="range"
+            id="speed"
+            name="speed"
+            min="0"
+            max="100"
+          />
+        </div>
+        <!-- Stamina field -->
+        <div class="form-group">
+          <label class="form-control-label" for="stamina">Stamina:</label>
+          <input
+            class="form-control-range"
+            type="range"
+            id="stamina"
+            name="stamina"
+            min="0"
+            max="100"
+            defaultValue="0"
+          />
+        </div>
+        <!-- Cooking field -->
+        <div class="form-group">
+          <label class="form-control-label" for="cooking">Cooking:</label>
+          <input
+            class="form-control-range"
+            type="range"
+            id="cooking"
+            name="cooking"
+            min="0"
+            max="100"
+          />
+        </div>
+        <!-- Combined field -->
+        <div><p>Combined:</p></div>
         <button
           type="submit"
           [disabled]="settingsForm.form.invalid"
