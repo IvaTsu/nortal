@@ -140,11 +140,14 @@
             </small>
           </div>
         </div>
-        <!-- todo: add skills (strength, speed, stamina, cooking) fields -->
+
+        <!-- DONE: add skills (strength, speed, stamina, cooking) fields -->
         <!-- Strength field -->
         <div class="form-group">
-          <label class="form-control-label" for="strength">Strength:</label>
+          <label class="form-control-label" for="strength">Strength: {{ settingsAccount.strength }}</label>
           <input
+						[(ngModel)]="settingsAccount.strength"
+						#strengthInput="ngModel"
             class="form-control-range"
             type="range"
             id="strength"
@@ -155,8 +158,10 @@
         </div>
         <!-- Speed field -->
         <div class="form-group">
-          <label class="form-control-label" for="speed">Speed:</label>
+          <label class="form-control-label" for="speed">Speed: {{ settingsAccount.speed }}</label>
           <input
+						[(ngModel)]="settingsAccount.speed"
+						#speedInput="ngModel"
             class="form-control-range"
             type="range"
             id="speed"
@@ -167,8 +172,10 @@
         </div>
         <!-- Stamina field -->
         <div class="form-group">
-          <label class="form-control-label" for="stamina">Stamina:</label>
+          <label class="form-control-label" for="stamina">Stamina: {{ settingsAccount.stamina }}</label>
           <input
+						[(ngModel)]="settingsAccount.stamina"
+						#staminaInput="ngModel"
             class="form-control-range"
             type="range"
             id="stamina"
@@ -180,8 +187,10 @@
         </div>
         <!-- Cooking field -->
         <div class="form-group">
-          <label class="form-control-label" for="cooking">Cooking:</label>
+          <label class="form-control-label" for="cooking">Cooking: {{ settingsAccount.cooking }}</label>
           <input
+						[(ngModel)]="settingsAccount.cooking"
+						#cookingInput="ngModel"
             class="form-control-range"
             type="range"
             id="cooking"
@@ -191,7 +200,7 @@
           />
         </div>
         <!-- Combined field -->
-        <div><p>Combined:</p></div>
+        <div><p>Combined skills: {{ settingsAccount.strength + settingsAccount.speed + settingsAccount.stamina + settingsAccount.cooking }}</p></div>
         <button
           type="submit"
           [disabled]="settingsForm.form.invalid"

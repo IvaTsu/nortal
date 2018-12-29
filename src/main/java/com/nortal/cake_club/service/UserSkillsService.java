@@ -34,16 +34,16 @@ import java.util.stream.Collectors;
 @Transactional
 public class UserSkillsService {
 
-    private final UserSkillsRepository userSkillsRepository;
+	private final UserSkillsRepository userSkillsRepository;
 
-    public UserSkillsService(UserSkillsRepository userSkillsRepository) {
-        this.userSkillsRepository = userSkillsRepository;
-    }
+	public UserSkillsService(UserSkillsRepository userSkillsRepository) {
+		this.userSkillsRepository = userSkillsRepository;
+	}
 
-    public void save(User user, UserDTO userDTO) {
+	public void save(User user, UserDTO userDTO) {
 
-        /* todo: fill method body to save user skills  */
-
-    }
+		/* todo: fill method body to save user skills */
+		userDTO.setCooking(userDTO.getCooking());
+	}
 
 }
